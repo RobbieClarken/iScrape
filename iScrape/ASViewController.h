@@ -14,5 +14,6 @@
 @property (strong, nonatomic) NMSSHSession *sshSession;
 
 - (void)openChannelAccess;
+- (void)closeChannelAccess;
 
 @end

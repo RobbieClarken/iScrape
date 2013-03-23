@@ -25,23 +25,23 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="scrapeButtonPressed:" destination="h8G-hu-iXk" eventType="touchUpInside" id="8L1-mT-py6"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5gQ-oo-E1v">
                                 <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="RATE: 1.37 mA/s" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hO-x8-r2q" customClass="ASLCDLabel">
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="34" id="WAa-mP-SlF"/>
-                                        </constraints>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="left" text="RATE: ??? mA/s" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hO-x8-r2q" customClass="ASLCDLabel">
                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                         <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="200.1 mA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FCx-I5-Fm8" customClass="ASLCDLabel">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="??? mA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FCx-I5-Fm8" customClass="ASLCDLabel">
                                         <fontDescription key="fontDescription" type="system" pointSize="58"/>
                                         <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="SCRAPER: 15.1 mm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dIR-3q-euT" customClass="ASLCDLabel">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="left" text="SCRAPER: ??? mm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dIR-3q-euT" customClass="ASLCDLabel">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="43" type="user" id="kPP-dd-sMW"/>
                                         </constraints>
@@ -49,7 +49,7 @@
                                         <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="SR02 RAD: 0.724 uSv" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VC4-EL-4R2" customClass="ASLCDLabel">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="left" text="SR02 RAD: ??? uSv" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VC4-EL-4R2" customClass="ASLCDLabel">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" type="user" id="u2U-zd-psA"/>
                                         </constraints>
@@ -57,7 +57,7 @@
                                         <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="SR12 RAD: 0.724 uSv" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zUe-KV-rrc" customClass="ASLCDLabel">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="left" text="SR12 RAD: ??? uSv" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zUe-KV-rrc" customClass="ASLCDLabel">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" type="user" id="vGi-5u-wyG"/>
                                         </constraints>
@@ -65,7 +65,7 @@
                                         <color key="textColor" red="0.13486374914646149" green="0.7797655463218689" blue="0.036770820617675781" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="SR14 RAD: 0.724 uSv" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="piP-yv-YWK" customClass="ASLCDLabel">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="5" contentMode="left" text="SR14 RAD: ??? uSv" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="piP-yv-YWK" customClass="ASLCDLabel">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" type="user" id="O0w-az-eJ4"/>
                                         </constraints>
@@ -77,9 +77,9 @@
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="VC4-EL-4R2" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="0IA-jQ-XFp"/>
-                                    <constraint firstItem="VC4-EL-4R2" firstAttribute="top" secondItem="dIR-3q-euT" secondAttribute="bottom" constant="8" type="user" id="2n8-YE-ssk"/>
                                     <constraint firstAttribute="centerX" secondItem="piP-yv-YWK" secondAttribute="centerX" type="user" id="BMo-5o-ggn"/>
                                     <constraint firstItem="FCx-I5-Fm8" firstAttribute="top" secondItem="5gQ-oo-E1v" secondAttribute="top" constant="10" id="BOU-na-C78"/>
+                                    <constraint firstItem="dIR-3q-euT" firstAttribute="centerX" secondItem="VC4-EL-4R2" secondAttribute="centerX" type="default" id="Dtm-ew-uZp"/>
                                     <constraint firstItem="2hO-x8-r2q" firstAttribute="trailing" secondItem="5gQ-oo-E1v" secondAttribute="trailing" type="default" id="EAJ-4T-Ebz"/>
                                     <constraint firstItem="2hO-x8-r2q" firstAttribute="top" secondItem="FCx-I5-Fm8" secondAttribute="bottom" constant="8" symbolic="YES" type="user" id="I4a-VJ-OEL"/>
                                     <constraint firstItem="2hO-x8-r2q" firstAttribute="leading" secondItem="5gQ-oo-E1v" secondAttribute="leading" type="default" id="Ka3-ay-TfQ"/>
@@ -87,14 +87,10 @@
                                     <constraint firstItem="FCx-I5-Fm8" firstAttribute="top" relation="greaterThanOrEqual" secondItem="5gQ-oo-E1v" secondAttribute="top" constant="10" type="user" id="RP2-ap-n4d"/>
                                     <constraint firstItem="piP-yv-YWK" firstAttribute="top" secondItem="zUe-KV-rrc" secondAttribute="bottom" constant="8" symbolic="YES" type="user" id="SKK-vP-WVY"/>
                                     <constraint firstAttribute="centerX" secondItem="zUe-KV-rrc" secondAttribute="centerX" type="user" id="ZBY-4F-8RG"/>
-                                    <constraint firstItem="zUe-KV-rrc" firstAttribute="top" secondItem="VC4-EL-4R2" secondAttribute="bottom" constant="8" type="user" id="bM7-2p-fpF"/>
-                                    <constraint firstItem="piP-yv-YWK" firstAttribute="top" secondItem="zUe-KV-rrc" secondAttribute="bottom" constant="8" type="user" id="cvb-KQ-r4H"/>
                                     <constraint firstItem="zUe-KV-rrc" firstAttribute="top" secondItem="VC4-EL-4R2" secondAttribute="bottom" constant="8" symbolic="YES" type="user" id="kK4-i7-ugp"/>
                                     <constraint firstItem="VC4-EL-4R2" firstAttribute="leading" secondItem="zUe-KV-rrc" secondAttribute="leading" type="default" id="lbb-nQ-3ZX"/>
-                                    <constraint firstItem="VC4-EL-4R2" firstAttribute="leading" secondItem="dIR-3q-euT" secondAttribute="leading" type="default" id="oSR-zQ-pQf"/>
-                                    <constraint firstItem="piP-yv-YWK" firstAttribute="leading" secondItem="zUe-KV-rrc" secondAttribute="leading" type="default" id="rCP-V2-sBX"/>
                                     <constraint firstItem="2hO-x8-r2q" firstAttribute="centerX" secondItem="FCx-I5-Fm8" secondAttribute="centerX" type="default" id="rSM-bc-FUA"/>
-                                    <constraint firstItem="VC4-EL-4R2" firstAttribute="centerX" secondItem="dIR-3q-euT" secondAttribute="centerX" type="default" id="ulc-u5-jAw"/>
+                                    <constraint firstItem="dIR-3q-euT" firstAttribute="centerX" secondItem="zUe-KV-rrc" secondAttribute="centerX" type="default" id="rTT-4W-tjc"/>
                                     <constraint firstAttribute="bottom" secondItem="piP-yv-YWK" secondAttribute="bottom" constant="20" symbolic="YES" type="user" id="vc0-0S-5Po"/>
                                     <constraint firstAttribute="trailing" secondItem="piP-yv-YWK" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="zjg-7q-mdr"/>
                                 </constraints>
@@ -132,7 +128,7 @@
         <class className="ASViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ASViewController.h"/>
             <relationships>
-                <relationship kind="action" name="announceButtonPressed:" candidateClass="UIButton"/>
+                <relationship kind="action" name="scrapeButtonPressed:" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="currentLabel" candidateClass="ASLCDLabel"/>
                 <relationship kind="outlet" name="radLabel1" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="radLabel2" candidateClass="UILabel"/>

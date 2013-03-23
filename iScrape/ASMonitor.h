@@ -11,7 +11,7 @@
 
 @class ASMonitor;
 
-@protocol ASMonitor <NSObject>
+@protocol ASMonitorDelegate <NSObject>
 
 - (void)monitorUpdate:(ASMonitor *)monitor record:(ChannelAccessRecord *)record;
 
@@ -23,7 +23,7 @@
 @property (strong, nonatomic) ChannelAccessRecord *latestRecord;
 @property (strong, nonatomic) id delegate;
 
-+ (void)monitorWithChannelName:(NSString *)channelName;
++ (ASMonitor *)monitorWithChannelName:(NSString *)channelName;
 
 - (void)connect;
 - (void)disconnect;

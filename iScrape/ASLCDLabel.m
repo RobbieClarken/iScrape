@@ -11,6 +11,7 @@
 static NSString *LCDFontName = @"DS-Digital";
 
 @implementation ASLCDLabel
+@synthesize text = _text;
 
 - (void)awakeFromNib {
     self.font = [UIFont fontWithName:LCDFontName size:self.font.pointSize];
@@ -18,6 +19,10 @@ static NSString *LCDFontName = @"DS-Digital";
 }
 
 - (void)setText:(NSString *)text {
+    if (!text) {
+        _text = text;
+        return;
+    }
     self.attributedText = [self lcdFontStringFromString:text withFontSize:self.font.pointSize];
 }
 

@@ -19,13 +19,13 @@
 		DC163EE516FDD58700E9FD49 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC163EE316FDD58700E9FD49 /* MainStoryboard_iPhone.storyboard */; };
 		DC163EE816FDD58700E9FD49 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC163EE616FDD58700E9FD49 /* MainStoryboard_iPad.storyboard */; };
 		DC163EEB16FDD58700E9FD49 /* ASViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC163EEA16FDD58700E9FD49 /* ASViewController.m */; };
-		DC96294A16FDDA6600EE5C21 /* NMSSH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC96294916FDDA6600EE5C21 /* NMSSH.framework */; };
 		DC96294C16FDE14700EE5C21 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DC96294B16FDE14700EE5C21 /* libz.dylib */; };
 		DC96294E16FE00AC00EE5C21 /* DS-DIGII.TTF in Resources */ = {isa = PBXBuildFile; fileRef = DC96294D16FE00AC00EE5C21 /* DS-DIGII.TTF */; };
 		DC96295016FE016100EE5C21 /* DS-DIGI.TTF in Resources */ = {isa = PBXBuildFile; fileRef = DC96294F16FE016100EE5C21 /* DS-DIGI.TTF */; };
 		DCDBE54416FE144B00251E8F /* libCALib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDBE54316FE144B00251E8F /* libCALib.a */; };
 		DCDBE55016FE26B000251E8F /* ASLCDLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDBE54F16FE26B000251E8F /* ASLCDLabel.m */; };
 		DCDBE55316FE2E8700251E8F /* ASMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDBE55216FE2E8700251E8F /* ASMonitor.m */; };
+		DCDBE55516FE442200251E8F /* NMSSH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDBE55416FE442200251E8F /* NMSSH.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +63,7 @@
 		DCDBE54F16FE26B000251E8F /* ASLCDLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASLCDLabel.m; sourceTree = "<group>"; };
 		DCDBE55116FE2E8700251E8F /* ASMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASMonitor.h; sourceTree = "<group>"; };
 		DCDBE55216FE2E8700251E8F /* ASMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASMonitor.m; sourceTree = "<group>"; };
+		DCDBE55416FE442200251E8F /* NMSSH.framework */ = {isa = PBXFileReference; lastKnownFileType = file; name = NMSSH.framework; path = "NMSSH/build/Release-iphoneos/NMSSH.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,12 +71,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCDBE55516FE442200251E8F /* NMSSH.framework in Frameworks */,
 				DCDBE54416FE144B00251E8F /* libCALib.a in Frameworks */,
 				DC96294C16FDE14700EE5C21 /* libz.dylib in Frameworks */,
 				DC163ECC16FDD58700E9FD49 /* UIKit.framework in Frameworks */,
 				DC163ECE16FDD58700E9FD49 /* Foundation.framework in Frameworks */,
 				DC163ED016FDD58700E9FD49 /* CoreGraphics.framework in Frameworks */,
-				DC96294A16FDDA6600EE5C21 /* NMSSH.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +104,7 @@
 		DC163ECA16FDD58700E9FD49 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DCDBE55416FE442200251E8F /* NMSSH.framework */,
 				DCDBE54316FE144B00251E8F /* libCALib.a */,
 				DC96294B16FDE14700EE5C21 /* libz.dylib */,
 				DC96294916FDDA6600EE5C21 /* NMSSH.framework */,

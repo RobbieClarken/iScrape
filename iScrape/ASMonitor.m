@@ -19,18 +19,29 @@
 
 @implementation ASMonitor
 
-
-+ (void)monitorWithChannelName:(NSString *)channelName {
++ (ASMonitor *)monitorWithChannelName:(NSString *)channelName {
     ASMonitor *monitor = [[ASMonitor alloc] init];
     monitor.channelName = channelName;
+    return monitor;
 }
 
 - (void)connect {
-    
+    self.caChannel = [ChannelAccessChannel channelWithName:self.channelName];
+    __weak ASMonitor *weakSelf = self;
+    self.caMonitor = [ChannelAccessMonitor monitorWithChannel:self.caChannel eventHandler:^(ChannelAccessRecord *record) {
+        [weakSelf.delegate monitorUpdate:weakSelf record:record];
+    }];
+    self.connectionObserver = [self.caChannel addConnectionObserverUsingBlock:^(NSNotification *notification) {
+        NSLog(@"connection observed");
+    }];
+    [self.caChannel connect];
+    [ChannelAccessChannel flushIO];
 }
 
 - (void)disconnect {
-    
+    [self.caMonitor clear];
+    [self.caChannel disconnect];
+    [ChannelAccessChannel flushIO];
 }
 
 @end
