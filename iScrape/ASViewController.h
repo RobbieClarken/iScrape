@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <NMSSH/NMSSH.h>
 
 @interface ASViewController : UIViewController
+
+@property (strong, nonatomic) NMSSHSession *sshSession;
 
 @end

@@ -8,22 +8,38 @@
 
 #import "ASViewController.h"
 
-@interface ASViewController ()
+@interface ASViewController () <UIAlertViewDelegate>
+
+@property (strong, nonatomic) NSString *password;
 
 @end
 
 @implementation ASViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    if (![self.sshSession isConnected]) {
+        // TODO: No connection
+    }
+    [self requestPassword];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)requestPassword {
+    UIAlertView *passwordAlertView = [[UIAlertView alloc] initWithTitle:@"Login" message:@"Please enter the password to proceed" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil];
+    [passwordAlertView setAlertViewStyle:UIAlertViewStyleSecureTextInput];
+    [passwordAlertView show];
+}
+
+- (void)authenticate {
+    [self.sshSession authenticateByPassword:self.password];
+}
+
+#pragma mark - UIAlertView delgate
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (buttonIndex == 1) {
+        self.password = [alertView textFieldAtIndex:0].text;
+    }
 }
 
 @end

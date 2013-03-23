@@ -7,12 +7,14 @@
 //
 
 #import "ASAppDelegate.h"
+#import <NMSSH/NMSSH.h>
+#import "ASViewController.h"
 
 @implementation ASAppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    ASViewController *viewController = (ASViewController *)self.window.rootViewController;
+    viewController.sshSession = [NMSSHSession connectToHost:@"10.6.100.199:22" withUsername:@"ics"];;
     return YES;
 }
 							
