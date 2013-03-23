@@ -21,6 +21,9 @@
 		DC163EEB16FDD58700E9FD49 /* ASViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC163EEA16FDD58700E9FD49 /* ASViewController.m */; };
 		DC96294A16FDDA6600EE5C21 /* NMSSH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC96294916FDDA6600EE5C21 /* NMSSH.framework */; };
 		DC96294C16FDE14700EE5C21 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DC96294B16FDE14700EE5C21 /* libz.dylib */; };
+		DC96294E16FE00AC00EE5C21 /* DS-DIGII.TTF in Resources */ = {isa = PBXBuildFile; fileRef = DC96294D16FE00AC00EE5C21 /* DS-DIGII.TTF */; };
+		DC96295016FE016100EE5C21 /* DS-DIGI.TTF in Resources */ = {isa = PBXBuildFile; fileRef = DC96294F16FE016100EE5C21 /* DS-DIGI.TTF */; };
+		DCDBE54416FE144B00251E8F /* libCALib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDBE54316FE144B00251E8F /* libCALib.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +46,17 @@
 		DC163EEA16FDD58700E9FD49 /* ASViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASViewController.m; sourceTree = "<group>"; };
 		DC96294916FDDA6600EE5C21 /* NMSSH.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NMSSH.framework; sourceTree = "<group>"; };
 		DC96294B16FDE14700EE5C21 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		DC96294D16FE00AC00EE5C21 /* DS-DIGII.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DS-DIGII.TTF"; sourceTree = "<group>"; };
+		DC96294F16FE016100EE5C21 /* DS-DIGI.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DS-DIGI.TTF"; sourceTree = "<group>"; };
+		DCDBE54316FE144B00251E8F /* libCALib.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libCALib.a; path = "catouch/build/Release-iphoneos/libCALib.a"; sourceTree = "<group>"; };
+		DCDBE54516FE15AE00251E8F /* ChannelAccessAlarm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChannelAccessAlarm.h; path = catouch/ChannelAccessAlarm.h; sourceTree = "<group>"; };
+		DCDBE54616FE15AE00251E8F /* ChannelAccessChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChannelAccessChannel.h; path = catouch/ChannelAccessChannel.h; sourceTree = "<group>"; };
+		DCDBE54716FE15AE00251E8F /* ChannelAccessClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChannelAccessClient.h; path = catouch/ChannelAccessClient.h; sourceTree = "<group>"; };
+		DCDBE54816FE15AE00251E8F /* ChannelAccessContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChannelAccessContext.h; path = catouch/ChannelAccessContext.h; sourceTree = "<group>"; };
+		DCDBE54916FE15AE00251E8F /* ChannelAccessException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChannelAccessException.h; path = catouch/ChannelAccessException.h; sourceTree = "<group>"; };
+		DCDBE54A16FE15AE00251E8F /* ChannelAccessMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChannelAccessMonitor.h; path = catouch/ChannelAccessMonitor.h; sourceTree = "<group>"; };
+		DCDBE54B16FE15AE00251E8F /* ChannelAccessPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChannelAccessPrivate.h; path = catouch/ChannelAccessPrivate.h; sourceTree = "<group>"; };
+		DCDBE54C16FE15AE00251E8F /* ChannelAccessPrivateUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChannelAccessPrivateUtility.h; path = catouch/ChannelAccessPrivateUtility.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCDBE54416FE144B00251E8F /* libCALib.a in Frameworks */,
 				DC96294C16FDE14700EE5C21 /* libz.dylib in Frameworks */,
 				DC163ECC16FDD58700E9FD49 /* UIKit.framework in Frameworks */,
 				DC163ECE16FDD58700E9FD49 /* Foundation.framework in Frameworks */,
@@ -65,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				DC163ED116FDD58700E9FD49 /* iScrape */,
+				DCDBE54D16FE15B500251E8F /* CATouch */,
 				DC163ECA16FDD58700E9FD49 /* Frameworks */,
 				DC163EC916FDD58700E9FD49 /* Products */,
 			);
@@ -81,6 +97,7 @@
 		DC163ECA16FDD58700E9FD49 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DCDBE54316FE144B00251E8F /* libCALib.a */,
 				DC96294B16FDE14700EE5C21 /* libz.dylib */,
 				DC96294916FDDA6600EE5C21 /* NMSSH.framework */,
 				DC163ECB16FDD58700E9FD49 /* UIKit.framework */,
@@ -107,6 +124,8 @@
 		DC163ED216FDD58700E9FD49 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DC96294F16FE016100EE5C21 /* DS-DIGI.TTF */,
+				DC96294D16FE00AC00EE5C21 /* DS-DIGII.TTF */,
 				DC163ED316FDD58700E9FD49 /* iScrape-Info.plist */,
 				DC163ED416FDD58700E9FD49 /* InfoPlist.strings */,
 				DC163ED716FDD58700E9FD49 /* main.m */,
@@ -116,6 +135,21 @@
 				DC163EE116FDD58700E9FD49 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DCDBE54D16FE15B500251E8F /* CATouch */ = {
+			isa = PBXGroup;
+			children = (
+				DCDBE54516FE15AE00251E8F /* ChannelAccessAlarm.h */,
+				DCDBE54616FE15AE00251E8F /* ChannelAccessChannel.h */,
+				DCDBE54716FE15AE00251E8F /* ChannelAccessClient.h */,
+				DCDBE54816FE15AE00251E8F /* ChannelAccessContext.h */,
+				DCDBE54916FE15AE00251E8F /* ChannelAccessException.h */,
+				DCDBE54A16FE15AE00251E8F /* ChannelAccessMonitor.h */,
+				DCDBE54B16FE15AE00251E8F /* ChannelAccessPrivate.h */,
+				DCDBE54C16FE15AE00251E8F /* ChannelAccessPrivateUtility.h */,
+			);
+			name = CATouch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +210,8 @@
 				DC163EE216FDD58700E9FD49 /* Default-568h@2x.png in Resources */,
 				DC163EE516FDD58700E9FD49 /* MainStoryboard_iPhone.storyboard in Resources */,
 				DC163EE816FDD58700E9FD49 /* MainStoryboard_iPad.storyboard in Resources */,
+				DC96294E16FE00AC00EE5C21 /* DS-DIGII.TTF in Resources */,
+				DC96295016FE016100EE5C21 /* DS-DIGI.TTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
