@@ -19,6 +19,7 @@
 		DC163EE516FDD58700E9FD49 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC163EE316FDD58700E9FD49 /* MainStoryboard_iPhone.storyboard */; };
 		DC163EE816FDD58700E9FD49 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC163EE616FDD58700E9FD49 /* MainStoryboard_iPad.storyboard */; };
 		DC163EEB16FDD58700E9FD49 /* ASViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC163EEA16FDD58700E9FD49 /* ASViewController.m */; };
+		DC96294A16FDDA6600EE5C21 /* NMSSH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC96294916FDDA6600EE5C21 /* NMSSH.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		DC163EE716FDD58700E9FD49 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		DC163EE916FDD58700E9FD49 /* ASViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASViewController.h; sourceTree = "<group>"; };
 		DC163EEA16FDD58700E9FD49 /* ASViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASViewController.m; sourceTree = "<group>"; };
+		DC96294916FDDA6600EE5C21 /* NMSSH.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NMSSH.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +51,7 @@
 				DC163ECC16FDD58700E9FD49 /* UIKit.framework in Frameworks */,
 				DC163ECE16FDD58700E9FD49 /* Foundation.framework in Frameworks */,
 				DC163ED016FDD58700E9FD49 /* CoreGraphics.framework in Frameworks */,
+				DC96294A16FDDA6600EE5C21 /* NMSSH.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +78,7 @@
 		DC163ECA16FDD58700E9FD49 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DC96294916FDDA6600EE5C21 /* NMSSH.framework */,
 				DC163ECB16FDD58700E9FD49 /* UIKit.framework */,
 				DC163ECD16FDD58700E9FD49 /* Foundation.framework */,
 				DC163ECF16FDD58700E9FD49 /* CoreGraphics.framework */,
@@ -275,6 +279,10 @@
 		DC163EEF16FDD58700E9FD49 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iScrape/iScrape-Prefix.pch";
 				INFOPLIST_FILE = "iScrape/iScrape-Info.plist";
@@ -286,6 +294,10 @@
 		DC163EF016FDD58700E9FD49 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iScrape/iScrape-Prefix.pch";
 				INFOPLIST_FILE = "iScrape/iScrape-Info.plist";
@@ -313,6 +325,7 @@
 				DC163EF016FDD58700E9FD49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
