@@ -7,61 +7,49 @@
 //
 
 #import "ASViewController.h"
-
-static NSString *LCDFontName = @"DS-Digital";
+#import "ChannelAccessChannel.h"
+#import "ChannelAccessMonitor.h"
+#import "ASLCDLabel.h"
 
 @interface ASViewController () <UIAlertViewDelegate>
 
 @property (strong, nonatomic) NSString *password;
-@property (weak, nonatomic) IBOutlet UILabel *currentLabel;
+@property (weak, nonatomic) IBOutlet ASLCDLabel *currentLabel;
 @property (weak, nonatomic) IBOutlet UILabel *rateLabel;
 @property (weak, nonatomic) IBOutlet UILabel *scraperLabel;
 @property (weak, nonatomic) IBOutlet UILabel *radLabel1;
 @property (weak, nonatomic) IBOutlet UILabel *radLabel2;
 @property (weak, nonatomic) IBOutlet UILabel *radLabel3;
 
+@property (strong, nonatomic) ChannelAccessChannel *currentChannel;
+@property (strong, nonatomic) ChannelAccessMonitor *currentMonitor;
+@property (strong, nonatomic) id currentConnectionObserver;
+
 @end
 
 @implementation ASViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    
-    [self applyLCDFontToLabels:@[self.currentLabel,
-                                 self.rateLabel,
-                                 self.scraperLabel,
-                                 self.radLabel1,
-                                 self.radLabel2,
-                                 self.radLabel3]];
-    
-    
-    
-    CGFloat currentFontSize = self.currentLabel.font.pointSize;
-    CGFloat currentFontLowercaseSize = 0.6 * currentFontSize;
-    NSMutableAttributedString *currentString = [[NSMutableAttributedString alloc] initWithString:@"200.123 mA"];
-    [currentString addAttribute:NSFontAttributeName value:[UIFont fontWithName:LCDFontName size:currentFontLowercaseSize] range:NSMakeRange([currentString length]-2, 1)];
-    self.currentLabel.attributedText = currentString;
-    
-    NSMutableAttributedString *rateString = [[NSMutableAttributedString alloc] initWithString:@"RATE: 1.35 mA/S"];
-    UIFont *rateLowerCaseFont = [UIFont fontWithName:LCDFontName size:16.0f];
-    [rateString addAttribute:NSFontAttributeName value:rateLowerCaseFont range:NSMakeRange([rateString length]-4, 1)];
-    [rateString addAttribute:NSFontAttributeName value:rateLowerCaseFont range:NSMakeRange([rateString length]-1, 1)];
-    self.rateLabel.attributedText = rateString;
-    
-    
-    
+    [super viewDidLoad];    
     if (![self.sshSession isConnected]) {
         // TODO: No connection
     }
     //[self requestPassword];
 }
 
-- (void)applyLCDFontToLabels:(NSArray *)labels {
-    for (UILabel *label in labels) {
-        label.font = [UIFont fontWithName:LCDFontName size:label.font.pointSize];
-    }
-    
+- (void)openChannelAccess {
+    self.currentChannel = [ChannelAccessChannel channelWithName:@"SR11BCM01:CURRENT_MONITOR"];
+    __weak ASViewController *weakSelf = self;
+    self.currentMonitor = [ChannelAccessMonitor monitorWithChannel:self.currentChannel eventHandler:^(ChannelAccessRecord *record) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            weakSelf.currentLabel.text = [NSString stringWithFormat:@"%@ mA", [record formattedScalarUsingPrecision:6]];
+        });
+    }];
+    self.currentConnectionObserver = [self.currentChannel addConnectionObserverUsingBlock:^(NSNotification *notification) {
+        NSLog(@"connection observed");
+    }];
+    [self.currentChannel connect];
+    [ChannelAccessChannel flushIO];
 }
 
 - (void)requestPassword {
