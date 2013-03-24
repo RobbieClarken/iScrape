@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ChannelAccessMonitor.h"
+#import "ChannelAccessClient.h"
 
 @class ASMonitor;
 

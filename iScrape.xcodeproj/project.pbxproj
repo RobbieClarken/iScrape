@@ -22,10 +22,11 @@
 		DC96294C16FDE14700EE5C21 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DC96294B16FDE14700EE5C21 /* libz.dylib */; };
 		DC96294E16FE00AC00EE5C21 /* DS-DIGII.TTF in Resources */ = {isa = PBXBuildFile; fileRef = DC96294D16FE00AC00EE5C21 /* DS-DIGII.TTF */; };
 		DC96295016FE016100EE5C21 /* DS-DIGI.TTF in Resources */ = {isa = PBXBuildFile; fileRef = DC96294F16FE016100EE5C21 /* DS-DIGI.TTF */; };
-		DCDBE54416FE144B00251E8F /* libCALib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDBE54316FE144B00251E8F /* libCALib.a */; };
 		DCDBE55016FE26B000251E8F /* ASLCDLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDBE54F16FE26B000251E8F /* ASLCDLabel.m */; };
 		DCDBE55316FE2E8700251E8F /* ASMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDBE55216FE2E8700251E8F /* ASMonitor.m */; };
 		DCDBE55516FE442200251E8F /* NMSSH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDBE55416FE442200251E8F /* NMSSH.framework */; };
+		DCF6046516FEF22E00ADBA48 /* libCALib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF6046416FEF22E00ADBA48 /* libCALib.a */; };
+		DCF6047016FEF56200ADBA48 /* ChannelAccessClient.h in Resources */ = {isa = PBXBuildFile; fileRef = DCF6046F16FEF56200ADBA48 /* ChannelAccessClient.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,20 +51,13 @@
 		DC96294B16FDE14700EE5C21 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		DC96294D16FE00AC00EE5C21 /* DS-DIGII.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DS-DIGII.TTF"; sourceTree = "<group>"; };
 		DC96294F16FE016100EE5C21 /* DS-DIGI.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DS-DIGI.TTF"; sourceTree = "<group>"; };
-		DCDBE54316FE144B00251E8F /* libCALib.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libCALib.a; path = "catouch/build/Release-iphoneos/libCALib.a"; sourceTree = "<group>"; };
-		DCDBE54516FE15AE00251E8F /* ChannelAccessAlarm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChannelAccessAlarm.h; path = catouch/ChannelAccessAlarm.h; sourceTree = "<group>"; };
-		DCDBE54616FE15AE00251E8F /* ChannelAccessChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChannelAccessChannel.h; path = catouch/ChannelAccessChannel.h; sourceTree = "<group>"; };
-		DCDBE54716FE15AE00251E8F /* ChannelAccessClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChannelAccessClient.h; path = catouch/ChannelAccessClient.h; sourceTree = "<group>"; };
-		DCDBE54816FE15AE00251E8F /* ChannelAccessContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChannelAccessContext.h; path = catouch/ChannelAccessContext.h; sourceTree = "<group>"; };
-		DCDBE54916FE15AE00251E8F /* ChannelAccessException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChannelAccessException.h; path = catouch/ChannelAccessException.h; sourceTree = "<group>"; };
-		DCDBE54A16FE15AE00251E8F /* ChannelAccessMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChannelAccessMonitor.h; path = catouch/ChannelAccessMonitor.h; sourceTree = "<group>"; };
-		DCDBE54B16FE15AE00251E8F /* ChannelAccessPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChannelAccessPrivate.h; path = catouch/ChannelAccessPrivate.h; sourceTree = "<group>"; };
-		DCDBE54C16FE15AE00251E8F /* ChannelAccessPrivateUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChannelAccessPrivateUtility.h; path = catouch/ChannelAccessPrivateUtility.h; sourceTree = "<group>"; };
 		DCDBE54E16FE26B000251E8F /* ASLCDLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASLCDLabel.h; sourceTree = "<group>"; };
 		DCDBE54F16FE26B000251E8F /* ASLCDLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASLCDLabel.m; sourceTree = "<group>"; };
 		DCDBE55116FE2E8700251E8F /* ASMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASMonitor.h; sourceTree = "<group>"; };
 		DCDBE55216FE2E8700251E8F /* ASMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASMonitor.m; sourceTree = "<group>"; };
-		DCDBE55416FE442200251E8F /* NMSSH.framework */ = {isa = PBXFileReference; lastKnownFileType = file; name = NMSSH.framework; path = "NMSSH/build/Release-iphoneos/NMSSH.framework"; sourceTree = "<group>"; };
+		DCDBE55416FE442200251E8F /* NMSSH.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NMSSH.framework; path = "NMSSH/build/Release-iphoneos/NMSSH.framework"; sourceTree = "<group>"; };
+		DCF6046416FEF22E00ADBA48 /* libCALib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCALib.a; path = "../../../Library/Developer/Xcode/DerivedData/iScrape-dszyufrznspbptcxpmxtiofgaxsf/Build/Products/Debug-iphoneos/libCALib.a"; sourceTree = "<group>"; };
+		DCF6046F16FEF56200ADBA48 /* ChannelAccessClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; name = ChannelAccessClient.h; path = ../capod/catouch/ChannelAccessClient.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCF6046516FEF22E00ADBA48 /* libCALib.a in Frameworks */,
 				DCDBE55516FE442200251E8F /* NMSSH.framework in Frameworks */,
-				DCDBE54416FE144B00251E8F /* libCALib.a in Frameworks */,
 				DC96294C16FDE14700EE5C21 /* libz.dylib in Frameworks */,
 				DC163ECC16FDD58700E9FD49 /* UIKit.framework in Frameworks */,
 				DC163ECE16FDD58700E9FD49 /* Foundation.framework in Frameworks */,
@@ -87,7 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				DC163ED116FDD58700E9FD49 /* iScrape */,
-				DCDBE54D16FE15B500251E8F /* CATouch */,
+				DCF6046E16FEF4B700ADBA48 /* CATouch */,
 				DC163ECA16FDD58700E9FD49 /* Frameworks */,
 				DC163EC916FDD58700E9FD49 /* Products */,
 			);
@@ -105,7 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				DCDBE55416FE442200251E8F /* NMSSH.framework */,
-				DCDBE54316FE144B00251E8F /* libCALib.a */,
+				DCF6046416FEF22E00ADBA48 /* libCALib.a */,
 				DC96294B16FDE14700EE5C21 /* libz.dylib */,
 				DC96294916FDDA6600EE5C21 /* NMSSH.framework */,
 				DC163ECB16FDD58700E9FD49 /* UIKit.framework */,
@@ -149,19 +143,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		DCDBE54D16FE15B500251E8F /* CATouch */ = {
+		DCF6046E16FEF4B700ADBA48 /* CATouch */ = {
 			isa = PBXGroup;
 			children = (
-				DCDBE54516FE15AE00251E8F /* ChannelAccessAlarm.h */,
-				DCDBE54616FE15AE00251E8F /* ChannelAccessChannel.h */,
-				DCDBE54716FE15AE00251E8F /* ChannelAccessClient.h */,
-				DCDBE54816FE15AE00251E8F /* ChannelAccessContext.h */,
-				DCDBE54916FE15AE00251E8F /* ChannelAccessException.h */,
-				DCDBE54A16FE15AE00251E8F /* ChannelAccessMonitor.h */,
-				DCDBE54B16FE15AE00251E8F /* ChannelAccessPrivate.h */,
-				DCDBE54C16FE15AE00251E8F /* ChannelAccessPrivateUtility.h */,
+				DCF6046F16FEF56200ADBA48 /* ChannelAccessClient.h */,
 			);
 			name = CATouch;
+			path = iScrape;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +212,7 @@
 				DC163EE816FDD58700E9FD49 /* MainStoryboard_iPad.storyboard in Resources */,
 				DC96294E16FE00AC00EE5C21 /* DS-DIGII.TTF in Resources */,
 				DC96295016FE016100EE5C21 /* DS-DIGI.TTF in Resources */,
+				DCF6047016FEF56200ADBA48 /* ChannelAccessClient.h in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +329,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iScrape/iScrape-Prefix.pch";
 				INFOPLIST_FILE = "iScrape/iScrape-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/iScrape-dszyufrznspbptcxpmxtiofgaxsf/Build/Products/Debug-iphoneos\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lstdc++",
@@ -359,6 +352,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iScrape/iScrape-Prefix.pch";
 				INFOPLIST_FILE = "iScrape/iScrape-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/iScrape-dszyufrznspbptcxpmxtiofgaxsf/Build/Products/Debug-iphoneos\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lstdc++",

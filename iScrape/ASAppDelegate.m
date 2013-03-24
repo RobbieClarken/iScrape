@@ -9,7 +9,7 @@
 #import "ASAppDelegate.h"
 #import <NMSSH/NMSSH.h>
 #import "ASViewController.h"
-#import "ChannelAccessContext.h"
+#import "ChannelAccessClient.h"
 
 @implementation ASAppDelegate
 

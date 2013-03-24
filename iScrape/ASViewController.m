@@ -7,8 +7,7 @@
 //
 
 #import "ASViewController.h"
-#import "ChannelAccessChannel.h"
-#import "ChannelAccessMonitor.h"
+#import "ChannelAccessClient.h"
 #import "ASLCDLabel.h"
 #import "ASMonitor.h"
 

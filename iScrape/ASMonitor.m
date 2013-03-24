@@ -7,7 +7,7 @@
 //
 
 #import "ASMonitor.h"
-#import "ChannelAccessChannel.h"
+#import "ChannelAccessClient.h"
 
 @interface ASMonitor()
 
