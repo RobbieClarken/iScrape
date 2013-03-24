@@ -3,4 +3,4 @@
 	url = https://github.com/Lejdborg/NMSSH
 [submodule "capod"]
 	path = capod
-	url = https://git.code.sf.net/p/capod/code
+	url = http://git.code.sf.net/p/capod/code
