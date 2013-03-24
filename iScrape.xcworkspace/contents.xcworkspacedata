@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:iScrape.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:NMSSH/NMSSH-iOS.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:capod/catouch/CATouch.xcodeproj">
+   </FileRef>
+</Workspace>
